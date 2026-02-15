@@ -1,0 +1,348 @@
+.free-offers-section {
+  background-color: #000000; /* Default - will be overridden by theme */
+  color: #ffffff;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #1a1a1a;
+  transition: background-color 0.3s ease;
+}
+
+.free-offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-header.animate-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #fff 0%, #a5a5a5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.offer-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2px; /* For border gradient effect */
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer-card.animate-slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.offer-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  opacity: 0.15;
+  filter: blur(40px);
+  transition: opacity 0.4s ease;
+}
+
+.offer-card:hover .offer-glow {
+  opacity: 0.3;
+}
+
+.offer-content {
+  background: #0a0a0a;
+  border-radius: 18px;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.offer-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.offer-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.offer-card:hover .offer-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.offer-platform {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.offer-service {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.offer-amount {
+  display: inline-block;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offer-description {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.claim-btn {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.claim-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  transform: scale(1.02);
+}
+
+.trial-banner {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.trial-banner.animate-fade-in {
+  opacity: 1;
+}
+
+.banner-content h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  color: #aaa;
+}
+
+.banner-btn {
+  padding: 12px 30px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.delay-3 { transition-delay: 0.3s; }
+
+/* Light Theme Styles */
+body.theme-light .free-offers-section {
+  background-color: #fafafa !important;
+  color: #2d2d2d !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+body.theme-light .section-title {
+  background: linear-gradient(135deg, #111111 0%, #2563eb 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+body.theme-light .section-subtitle {
+  color: #333333 !important;
+}
+
+body.theme-light .offer-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.theme-light .offer-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .offer-glow {
+  display: none !important;
+}
+
+body.theme-light .offer-content {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 30px !important;
+}
+
+body.theme-light .offer-icon-wrapper {
+  background: #f8f9fa !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+body.theme-light .offer-card:hover .offer-icon-wrapper {
+  background: #f1f5f9 !important;
+  border-color: #2563eb !important;
+}
+
+body.theme-light .offer-platform {
+  color: #6b7280 !important;
+  font-weight: 600 !important;
+}
+
+body.theme-light .offer-service {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .offer-amount {
+  background: #eff6ff !important;
+  border: 1px solid #bfdbfe !important;
+  color: #2563eb !important;
+  font-weight: 600 !important;
+}
+
+body.theme-light .offer-description {
+  color: #333333 !important;
+  line-height: 1.6 !important;
+}
+
+body.theme-light .claim-btn {
+  background: #ffffff !important;
+  border: 1.5px solid #2563eb !important;
+  color: #2563eb !important;
+  font-weight: 600 !important;
+}
+
+body.theme-light .claim-btn:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  transform: scale(1.02) !important;
+}
+
+body.theme-light .trial-banner {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.theme-light .banner-content h3 {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .banner-content p {
+  color: #333333 !important;
+}
+
+body.theme-light .banner-btn {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+body.theme-light .banner-btn:hover {
+  background: #1d4ed8 !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35) !important;
+}
+
+@media (max-width: 768px) {
+  .trial-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+

@@ -1,0 +1,104 @@
+.policy-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.policy-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.policy-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.policy-intro {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.policy-content {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+}
+
+.policy-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.policy-content p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.policy-contact {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+}
+
+.policy-contact a {
+  color: #fbbf24;
+  text-decoration: none;
+}
+
+.policy-contact a:hover {
+  text-decoration: underline;
+}
+
+.announcements-list .announcement-item {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border-left: 4px solid #fbbf24;
+}
+
+.announcements-list .announcement-item .policy-heading {
+  margin-top: 0;
+}
+
+body.theme-light .policy-section {
+  background: #fafafa;
+}
+
+body.theme-light .policy-title {
+  color: #111;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body.theme-light .policy-intro,
+body.theme-light .policy-content {
+  color: #374151;
+}
+
+body.theme-light .policy-heading {
+  color: #1d4ed8;
+}
+
+body.theme-light .policy-contact {
+  border-top-color: #e5e7eb;
+}
+
+body.theme-light .announcements-list .announcement-item {
+  background: #fff;
+  border-left-color: #2563eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}

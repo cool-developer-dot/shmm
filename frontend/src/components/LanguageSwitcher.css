@@ -1,0 +1,207 @@
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  min-width: 85px;
+  height: 36px;
+  justify-content: space-between;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.language-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.language-icon {
+  font-size: 0.85rem;
+}
+
+.language-label {
+  font-size: 0.65rem;
+  flex: 1;
+  text-align: left;
+}
+
+.language-arrow {
+  font-size: 0.6rem;
+  transition: transform 0.3s ease;
+}
+
+.language-arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-width: 150px;
+  max-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .language-dropdown {
+    right: auto;
+    left: 0;
+    min-width: 140px;
+  }
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.language-option:last-child {
+  border-bottom: none;
+}
+
+.language-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 1.25rem;
+}
+
+.language-option.active {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  border-left: 3px solid #2563eb;
+}
+
+/* Mobile styles */
+.mobile-language-switcher {
+  width: 100%;
+}
+
+.mobile-language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mobile-language-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-language-dropdown {
+  margin-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mobile-language-option {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-language-option:last-child {
+  border-bottom: none;
+}
+
+.mobile-language-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 2rem;
+}
+
+.mobile-language-option.active {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  border-left: 3px solid #2563eb;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] .language-dropdown {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .language-option {
+  text-align: right;
+}
+
+[dir="rtl"] .language-option:hover {
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+}
+
+[dir="rtl"] .mobile-language-option {
+  text-align: right;
+}
+
+[dir="rtl"] .mobile-language-option:hover {
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+}
+

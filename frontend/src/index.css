@@ -1,0 +1,1087 @@
+@import "tailwindcss";
+
+/* ============================================
+   COMPLETE THEME STYLES FOR ENTIRE WEBSITE
+   ============================================ */
+
+/* LIGHT THEME */
+body.theme-light {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header stays dark in all themes - styles controlled by Header.css */
+
+body.theme-light a:not(.nav-link):not(.logo-link):not(.btn-free-games):not(.btn-login):not(.btn-signup):not(.hero-cta-primary):not(.hero-cta-secondary):not(.mobile-nav-link):not(.mobile-btn-free-games):not(.mobile-btn-login):not(.mobile-btn-signup) {
+  color: #2563eb;
+}
+
+body.theme-light a:not(.nav-link):not(.logo-link):not(.btn-free-games):not(.btn-login):not(.btn-signup):not(.hero-cta-primary):not(.hero-cta-secondary):not(.mobile-nav-link):not(.mobile-btn-free-games):not(.mobile-btn-login):not(.mobile-btn-signup):hover {
+  color: #1d4ed8;
+}
+
+body.theme-light button:not(.header button):not(.theme-toggle):not(.hamburger-menu):not(.language-toggle):not(.mobile-theme-toggle):not(.mobile-language-toggle):not(.hero-dot):not(.hero-arrow) {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+body.theme-light button:not(.header button):not(.theme-toggle):not(.hamburger-menu):not(.language-toggle):not(.mobile-theme-toggle):not(.mobile-language-toggle):not(.hero-dot):not(.hero-arrow):hover {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+  color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+body.theme-light .card,
+body.theme-light .section,
+body.theme-light .container {
+  background-color: #ffffff;
+  color: #2d2d2d;
+  border-color: #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light input,
+body.theme-light textarea,
+body.theme-light select {
+  background-color: #ffffff;
+  color: #1f2937;
+  border-color: #d1d5db;
+}
+
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light h3,
+body.theme-light h4,
+body.theme-light h5,
+body.theme-light h6 {
+  color: #111111;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+body.theme-light h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+body.theme-light h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+body.theme-light h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+body.theme-light p {
+  color: #2d2d2d;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* DARK THEME */
+body.theme-dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+body.theme-dark .header {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+body.theme-dark .nav-link {
+  color: #94a3b8;
+}
+
+body.theme-dark .nav-link:hover {
+  color: #f1f5f9;
+}
+
+body.theme-dark .nav-link.active {
+  color: #60a5fa;
+}
+
+body.theme-dark a {
+  color: #60a5fa;
+}
+
+body.theme-dark a:hover {
+  color: #93c5fd;
+}
+
+body.theme-dark button {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.theme-dark button:hover {
+  border-color: #60a5fa;
+  background-color: #334155;
+}
+
+body.theme-dark .card,
+body.theme-dark .section,
+body.theme-dark .container {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.theme-dark input,
+body.theme-dark textarea,
+body.theme-dark select {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5,
+body.theme-dark h6 {
+  color: #f8fafc;
+}
+
+/* GRAY THEME */
+body.theme-gray {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+body.theme-gray .header {
+  background: #1f2937;
+  border-bottom: 1px solid #4b5563;
+}
+
+body.theme-gray .nav-link {
+  color: #d1d5db;
+}
+
+body.theme-gray .nav-link:hover {
+  color: #ffffff;
+}
+
+body.theme-gray .nav-link.active {
+  color: #a5b4fc;
+}
+
+body.theme-gray a {
+  color: #a5b4fc;
+}
+
+body.theme-gray a:hover {
+  color: #c7d2fe;
+}
+
+body.theme-gray button {
+  background-color: #4b5563;
+  color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+body.theme-gray button:hover {
+  border-color: #a5b4fc;
+  background-color: #6b7280;
+}
+
+body.theme-gray .card,
+body.theme-gray .section,
+body.theme-gray .container {
+  background-color: #4b5563;
+  color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+body.theme-gray input,
+body.theme-gray textarea,
+body.theme-gray select {
+  background-color: #374151;
+  color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+body.theme-gray h1,
+body.theme-gray h2,
+body.theme-gray h3,
+body.theme-gray h4,
+body.theme-gray h5,
+body.theme-gray h6 {
+  color: #ffffff;
+}
+
+/* ============================================
+   THEME-AWARE COMPONENT BACKGROUNDS
+   ============================================ */
+
+/* Home Section */
+body.theme-light .home-container {
+  background: #ffffff !important;
+}
+
+body.theme-dark .home-container {
+  background: #0f172a !important;
+}
+
+body.theme-gray .home-container {
+  background: #374151 !important;
+}
+
+/* About Us Section */
+body.theme-light .about-section {
+  background-color: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .about-section {
+  background-color: #0f172a !important;
+}
+
+body.theme-gray .about-section {
+  background-color: #374151 !important;
+}
+
+/* Services Section */
+body.theme-light .services-page {
+  background-color: #ffffff !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .services-page {
+  background-color: #0f172a !important;
+  background-image: radial-gradient(at 50% 50%, rgba(15, 23, 42, 1) 0px, #0f172a 100%) !important;
+}
+
+body.theme-gray .services-page {
+  background-color: #374151 !important;
+  background-image: radial-gradient(at 50% 50%, rgba(55, 65, 81, 1) 0px, #374151 100%) !important;
+}
+
+/* Testimonials Section */
+body.theme-light .testimonials-section {
+  background-color: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .testimonials-section {
+  background-color: #0f172a !important;
+}
+
+body.theme-gray .testimonials-section {
+  background-color: #374151 !important;
+}
+
+/* Stats Section */
+body.theme-light .stats-section {
+  background: #ffffff !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .stats-section {
+  background: #0f172a !important;
+}
+
+body.theme-gray .stats-section {
+  background: #374151 !important;
+}
+
+/* Payment Methods Section */
+body.theme-light .payment-section {
+  background: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .payment-section {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+
+body.theme-gray .payment-section {
+  background: linear-gradient(180deg, #374151 0%, #4b5563 50%, #374151 100%) !important;
+}
+
+/* Reseller Partner Section */
+body.theme-light .reseller-section {
+  background: #ffffff !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .reseller-section {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+
+body.theme-gray .reseller-section {
+  background: linear-gradient(180deg, #374151 0%, #4b5563 50%, #374151 100%) !important;
+}
+
+/* How It Works Section */
+body.theme-light .how-it-works-section {
+  background: #ffffff !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .how-it-works-section {
+  background: #0f172a !important;
+}
+
+body.theme-gray .how-it-works-section {
+  background: #374151 !important;
+}
+
+/* Dual Slider Section */
+body.theme-light .dual-slider-section {
+  background-color: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .dual-slider-section {
+  background-color: #0f172a !important;
+}
+
+body.theme-gray .dual-slider-section {
+  background-color: #374151 !important;
+}
+
+/* Team Section */
+body.theme-light .team-section {
+  background-color: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .team-section {
+  background-color: #0f172a !important;
+}
+
+body.theme-gray .team-section {
+  background-color: #374151 !important;
+}
+
+/* Affiliate Section */
+body.theme-light .affiliate-section {
+  background: #ffffff !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .affiliate-section {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+
+body.theme-gray .affiliate-section {
+  background: linear-gradient(180deg, #374151 0%, #4b5563 50%, #374151 100%) !important;
+}
+
+/* Contact Us Section */
+body.theme-light .contact-section {
+  background: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .contact-section {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+
+body.theme-gray .contact-section {
+  background: linear-gradient(180deg, #374151 0%, #4b5563 50%, #374151 100%) !important;
+}
+
+/* Free Offers Section */
+body.theme-light .free-offers-section {
+  background-color: #fafafa !important;
+  padding: 4rem 0 !important;
+}
+
+body.theme-dark .free-offers-section {
+  background-color: #0f172a !important;
+}
+
+body.theme-gray .free-offers-section {
+  background-color: #374151 !important;
+}
+
+/* Footer Section */
+body.theme-light .footer {
+  background: #ffffff !important;
+  border-top: 1px solid #e5e7eb !important;
+  padding: 3rem 0 !important;
+}
+
+body.theme-dark .footer {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+}
+
+body.theme-gray .footer {
+  background: linear-gradient(180deg, #374151 0%, #4b5563 50%, #374151 100%) !important;
+}
+
+/* Root element background */
+body.theme-light #root {
+  background-color: #ffffff;
+}
+
+body.theme-dark #root {
+  background-color: #0f172a;
+}
+
+body.theme-gray #root {
+  background-color: #374151;
+}
+
+/* ============================================
+   LIGHT THEME CARD STYLING
+   ============================================ */
+
+/* Service Cards */
+body.theme-light .service-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .service-card:hover {
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-color: #2563eb !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .card-icon {
+  background-color: #f8f9fa !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.theme-light .card-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.theme-light .card-desc {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Stat Cards */
+body.theme-light .stat-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .stat-card:hover {
+  background: #ffffff !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-color: #2563eb !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .stat-heading {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .stat-number {
+  color: #111111 !important;
+  font-weight: 800 !important;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+}
+
+body.theme-light .stat-label {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+}
+
+body.theme-light .stat-icon-wrapper {
+  background: #f8f9fa !important;
+  border-color: #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+}
+
+body.theme-light .stat-icon-wrapper svg {
+  stroke: #333333 !important;
+}
+
+/* Company Cards (DualSlider) */
+body.theme-light .company-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .company-card:hover {
+  background: #ffffff !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .company-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .project-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .project-description {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Dashboard Cards (Affiliate) */
+body.theme-light .dashboard-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .dashboard-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Why Join Cards */
+body.theme-light .why-join-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .why-join-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .why-join-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.theme-light .why-join-description {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Testimonial Cards */
+body.theme-light .testimonial-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .testimonial-card:hover {
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-color: #2563eb !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .testimonial-text {
+  color: #2d2d2d !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+body.theme-light .testimonial-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .testimonial-role {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+}
+
+/* Step Cards (How It Works) */
+body.theme-light .step-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .step-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .step-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.theme-light .step-description {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Benefit Cards (Reseller) */
+body.theme-light .benefit-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .benefit-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .benefit-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.theme-light .benefit-desc {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Payment Method Cards */
+body.theme-light .payment-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .payment-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .payment-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .payment-description {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Free Offer Cards */
+body.theme-light .offer-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .offer-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .offer-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.theme-light .offer-description {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Team Cards */
+body.theme-light .team-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+body.theme-light .team-card:hover {
+  border-color: #2563eb !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+body.theme-light .member-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+}
+
+body.theme-light .member-role {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+}
+
+/* Header buttons stay dark in all themes - styles controlled by Header.css */
+
+/* Language toggle in header stays dark - controlled by Header.css */
+
+body.theme-light .hamburger-menu span {
+  background-color: #374151 !important;
+}
+
+body.theme-light .mobile-menu {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+body.theme-light .mobile-nav-link {
+  color: #374151 !important;
+}
+
+body.theme-light .mobile-nav-link:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+body.theme-light .mobile-nav-link.active {
+  color: #2563eb !important;
+  background-color: #eff6ff !important;
+  border-left-color: #2563eb !important;
+}
+
+/* Section titles in light theme */
+body.theme-light .section-title {
+  color: #111111 !important;
+  font-weight: 800 !important;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+}
+
+body.theme-light .section-subtitle {
+  color: #333333 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+}
+
+/* Text colors in light theme - Global overrides */
+body.theme-light p {
+  color: #2d2d2d !important;
+  line-height: 1.7 !important;
+}
+
+body.theme-light span {
+  color: #2d2d2d !important;
+}
+
+body.theme-light div {
+  color: #2d2d2d !important;
+}
+
+body.theme-light * {
+  color: inherit;
+}
+
+/* Override all white text colors in light theme */
+body.theme-light .hero-title,
+body.theme-light .hero-subtitle,
+body.theme-light .page-title,
+body.theme-light .page-subtitle,
+body.theme-light .section-title,
+body.theme-light .section-subtitle,
+body.theme-light .affiliate-hero-title,
+body.theme-light .affiliate-hero-description,
+body.theme-light .reseller-title,
+body.theme-light .reseller-subtitle,
+body.theme-light .payment-title,
+body.theme-light .payment-subtitle,
+body.theme-light .contact-hero-title,
+body.theme-light .contact-hero-subtitle,
+body.theme-light .hiw-title,
+body.theme-light .hiw-subtitle,
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light h3,
+body.theme-light h4,
+body.theme-light h5,
+body.theme-light h6 {
+  color: #111111 !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+/* Override gradient text in light theme */
+body.theme-light .page-title {
+  background: linear-gradient(135deg, #111827 0%, #2563eb 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Override component-specific white text */
+body.theme-light .about-section,
+body.theme-light .about-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .free-offers-section,
+body.theme-light .free-offers-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .stats-section,
+body.theme-light .stats-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .dual-slider-section,
+body.theme-light .dual-slider-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .team-section,
+body.theme-light .team-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .testimonials-section,
+body.theme-light .testimonials-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .payment-section,
+body.theme-light .payment-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .reseller-section,
+body.theme-light .reseller-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .affiliate-section,
+body.theme-light .affiliate-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .contact-section,
+body.theme-light .contact-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .how-it-works-section,
+body.theme-light .how-it-works-section * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .footer,
+body.theme-light .footer * {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .home-container,
+body.theme-light .home-container * {
+  color: #2d2d2d !important;
+}
+
+/* Specific text element overrides */
+body.theme-light .stat-heading,
+body.theme-light .stat-number,
+body.theme-light .stat-label {
+  color: #111111 !important;
+}
+
+body.theme-light .company-name,
+body.theme-light .project-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .project-description {
+  color: #333333 !important;
+}
+
+body.theme-light .testimonial-text {
+  color: #2d2d2d !important;
+  line-height: 1.7 !important;
+}
+
+body.theme-light .testimonial-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .testimonial-role {
+  color: #333333 !important;
+}
+
+body.theme-light .step-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .step-description {
+  color: #333333 !important;
+}
+
+body.theme-light .benefit-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .benefit-desc {
+  color: #333333 !important;
+}
+
+body.theme-light .payment-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .payment-description {
+  color: #333333 !important;
+}
+
+body.theme-light .offer-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .offer-description {
+  color: #333333 !important;
+}
+
+body.theme-light .member-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .member-role {
+  color: #333333 !important;
+}
+
+body.theme-light .why-join-title {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .why-join-description {
+  color: #333333 !important;
+}
+
+body.theme-light .dashboard-stat,
+body.theme-light .dashboard-label {
+  color: #111111 !important;
+  font-weight: 600 !important;
+}
+
+/* Header text stays light in all themes - styles controlled by Header.css */
+
+/* Footer text */
+body.theme-light .footer p,
+body.theme-light .footer span,
+body.theme-light .footer a,
+body.theme-light .footer li {
+  color: #333333 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6 !important;
+}
+
+body.theme-light .footer a:hover {
+  color: #2563eb !important;
+}
+
+/* Form elements */
+body.theme-light label {
+  color: #222222 !important;
+  font-weight: 600 !important;
+  font-size: 0.9375rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+body.theme-light input,
+body.theme-light textarea {
+  background-color: #ffffff !important;
+  border: 1.5px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  color: #111111 !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+body.theme-light input:focus,
+body.theme-light textarea:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+  outline: none !important;
+}
+
+body.theme-light input::placeholder,
+body.theme-light textarea::placeholder {
+  color: #9ca3af !important;
+}

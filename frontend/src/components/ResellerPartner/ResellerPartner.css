@@ -1,0 +1,857 @@
+.reseller-section {
+  width: 100vw;
+  padding: 7rem 2rem;
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 50%, #000000 100%); /* Default - will be overridden by theme */
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease;
+}
+
+.reseller-bg-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: pulseGlow 10s ease-in-out infinite;
+}
+
+.reseller-bg-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 40% 60%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+  animation: pulseGlow 12s ease-in-out infinite reverse;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.reseller-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reseller-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reseller-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 30%, #c4b5fd 60%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+  text-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+  position: relative;
+}
+
+.reseller-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #8b5cf6, transparent);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.reseller-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 6rem;
+  max-width: 1200px;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(15, 15, 15, 0.98) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 0;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(30px);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+.benefit-image-wrapper {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
+}
+
+.benefit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(0.75) saturate(0.85) contrast(1.1);
+  transform-origin: center;
+}
+
+.benefit-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.benefit-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--benefit-color, rgba(139, 92, 246, 0.1)) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.benefit-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 3;
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.75rem;
+  background: rgba(139, 92, 246, 0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b5cf6;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(139, 92, 246, 0.2);
+  position: relative;
+  z-index: 4;
+}
+
+.benefit-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.15) rotate(5deg);
+  background: var(--benefit-gradient, linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%));
+  color: #fff;
+  box-shadow: 0 0 30px var(--benefit-color-alpha, rgba(139, 92, 246, 0.5));
+  border-color: var(--benefit-color, #8b5cf6);
+}
+
+.benefit-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.4s ease;
+  letter-spacing: -0.3px;
+}
+
+.benefit-card:hover h3 {
+  background: linear-gradient(135deg, #ffffff 0%, var(--benefit-color, #8b5cf6) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-2px);
+}
+
+.benefit-card p {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  transition: color 0.4s ease;
+}
+
+.benefit-card:hover p {
+  color: #cbd5e1;
+}
+
+.benefit-card:hover {
+  transform: translateY(-16px) scale(1.02);
+  border-color: var(--benefit-color, #8b5cf6);
+  border-width: 2px;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    0 0 50px var(--benefit-color-alpha, rgba(139, 92, 246, 0.3)),
+    0 0 100px var(--benefit-color-alpha, rgba(139, 92, 246, 0.15));
+}
+
+.benefit-card:hover .benefit-image {
+  transform: scale(1.2) rotate(1deg);
+  filter: brightness(1.1) saturate(1.3) contrast(1.15);
+}
+
+.benefit-card:hover .benefit-image-overlay {
+  opacity: 0.2;
+  background: linear-gradient(
+    to bottom, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.benefit-card:hover .benefit-image-wrapper::after {
+  opacity: 0.4;
+}
+
+.benefit-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.benefit-card:hover .benefit-shine {
+  left: 200%;
+  transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefit-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle, 
+    var(--benefit-color-alpha, rgba(139, 92, 246, 0.2)) 0%, 
+    var(--benefit-color-alpha, rgba(139, 92, 246, 0.1)) 40%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(20px);
+}
+
+.benefit-card:hover .benefit-glow {
+  opacity: 1;
+}
+
+/* Color-specific glows */
+.benefit-card-0:hover {
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(16, 185, 129, 0.4),
+    0 0 100px rgba(16, 185, 129, 0.2),
+    0 0 150px rgba(16, 185, 129, 0.1);
+}
+
+.benefit-card-1:hover {
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(59, 130, 246, 0.4),
+    0 0 100px rgba(59, 130, 246, 0.2),
+    0 0 150px rgba(59, 130, 246, 0.1);
+}
+
+.benefit-card-2:hover {
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(139, 92, 246, 0.4),
+    0 0 100px rgba(139, 92, 246, 0.2),
+    0 0 150px rgba(139, 92, 246, 0.1);
+}
+
+/* Steps Flow */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 5rem;
+  position: relative;
+  opacity: 0;
+}
+
+.steps-line {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.8) 50%, rgba(139, 92, 246, 0.2) 100%);
+  z-index: 0;
+}
+
+.step-item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.step-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(15, 15, 15, 0.98) 100%);
+  border: 2.5px solid #8b5cf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 
+    0 0 25px rgba(139, 92, 246, 0.3),
+    0 0 0 1px rgba(139, 92, 246, 0.1) inset;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.step-circle::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.step-circle span {
+  font-weight: 800;
+  color: #8b5cf6;
+  font-size: 1.3rem;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.step-item:hover .step-circle {
+  transform: scale(1.15);
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  box-shadow: 
+    0 0 40px rgba(139, 92, 246, 0.6),
+    0 0 80px rgba(139, 92, 246, 0.3);
+  border-color: #a78bfa;
+}
+
+.step-item:hover .step-circle::before {
+  opacity: 1;
+}
+
+.step-item:hover .step-circle span {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.step-content h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.step-item:hover .step-content h4 {
+  color: #c4b5fd;
+  transform: translateX(5px);
+}
+
+.step-content p {
+  color: #94a3b8;
+  font-size: 1rem;
+  max-width: 220px;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.step-item:hover .step-content p {
+  color: #cbd5e1;
+}
+
+/* CTA */
+.cta-container {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.reseller-btn {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: #fff;
+  border: none;
+  padding: 1.4rem 3.5rem;
+  border-radius: 50px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 10px 30px rgba(109, 40, 217, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.reseller-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.reseller-btn:hover::before {
+  left: 100%;
+}
+
+.reseller-btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.reseller-btn:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 
+    0 25px 50px rgba(109, 40, 217, 0.6),
+    0 0 60px rgba(139, 92, 246, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
+.reseller-btn:hover svg {
+  transform: translateX(8px) scale(1.1);
+}
+
+/* Animations */
+.animate-fade-up {
+  animation: fadeUp 0.8s forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s 0.5s forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.6s 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reseller-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .reseller-title {
+    font-size: 2.5rem;
+  }
+
+  .reseller-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .benefit-card {
+    min-height: 380px;
+  }
+
+  .benefit-image-wrapper {
+    height: 180px;
+  }
+
+  .benefit-content {
+    padding: 2rem;
+  }
+
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+  }
+
+  .benefit-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .steps-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-left: 20px;
+  }
+  
+  .steps-line {
+    width: 2px;
+    height: 100%;
+    left: 49px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.8) 50%, rgba(139, 92, 246, 0.2) 100%);
+  }
+  
+  .step-item {
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5rem;
+  }
+  
+  .step-circle {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-circle span {
+    font-size: 1.2rem;
+  }
+  
+  .step-content p {
+    max-width: none;
+  }
+
+  .reseller-btn {
+    padding: 1.2rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reseller-title {
+    font-size: 2rem;
+  }
+
+  .benefit-card {
+    min-height: 360px;
+  }
+
+  .benefit-image-wrapper {
+    height: 160px;
+  }
+}
+
+/* Light Theme Styles */
+body.theme-light .reseller-section {
+  background: #ffffff !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+body.theme-light .reseller-bg-glow {
+  display: none !important;
+}
+
+body.theme-light .reseller-title {
+  background: linear-gradient(135deg, #111111 0%, #7c3aed 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+body.theme-light .reseller-title::after {
+  background: linear-gradient(90deg, transparent, #7c3aed, transparent) !important;
+}
+
+body.theme-light .reseller-subtitle {
+  color: #333333 !important;
+}
+
+body.theme-light .benefit-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.theme-light .benefit-card::before {
+  display: none !important;
+}
+
+body.theme-light .benefit-card:hover {
+  background: #ffffff !important;
+  border-color: var(--benefit-color) !important;
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) scale(1.02) !important;
+}
+
+body.theme-light .benefit-image-wrapper {
+  background: #f8f9fa !important;
+}
+
+body.theme-light .benefit-image {
+  filter: brightness(1) saturate(1) contrast(1) !important;
+}
+
+body.theme-light .benefit-image-overlay {
+  display: none !important;
+}
+
+body.theme-light .benefit-image-wrapper::after {
+  display: none !important;
+}
+
+body.theme-light .benefit-content {
+  background: #ffffff !important;
+}
+
+body.theme-light .benefit-icon {
+  background: #f8f9fa !important;
+  border: 1.5px solid #e5e7eb !important;
+  color: var(--benefit-color) !important;
+}
+
+body.theme-light .benefit-card:hover .benefit-icon {
+  background: var(--benefit-gradient) !important;
+  color: #ffffff !important;
+  border-color: var(--benefit-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.theme-light .benefit-card h3 {
+  color: #111111 !important;
+  background: none !important;
+  -webkit-text-fill-color: #111111 !important;
+  font-weight: 800 !important;
+}
+
+body.theme-light .benefit-card:hover h3 {
+  color: var(--benefit-color) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--benefit-color) !important;
+  transform: none !important;
+}
+
+body.theme-light .benefit-card p {
+  color: #333333 !important;
+  line-height: 1.7 !important;
+}
+
+body.theme-light .benefit-card:hover p {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .benefit-shine {
+  display: none !important;
+}
+
+body.theme-light .benefit-glow {
+  display: none !important;
+}
+
+body.theme-light .steps-line {
+  background: linear-gradient(90deg, rgba(124, 58, 237, 0.2) 0%, rgba(124, 58, 237, 0.6) 50%, rgba(124, 58, 237, 0.2) 100%) !important;
+}
+
+body.theme-light .step-circle {
+  background: #ffffff !important;
+  border: 2.5px solid #7c3aed !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.theme-light .step-circle::before {
+  display: none !important;
+}
+
+body.theme-light .step-circle span {
+  color: #7c3aed !important;
+}
+
+body.theme-light .step-item:hover .step-circle {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3) !important;
+  border-color: #7c3aed !important;
+}
+
+body.theme-light .step-item:hover .step-circle span {
+  color: #ffffff !important;
+}
+
+body.theme-light .step-content h4 {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .step-item:hover .step-content h4 {
+  color: #7c3aed !important;
+  transform: none !important;
+}
+
+body.theme-light .step-content p {
+  color: #333333 !important;
+}
+
+body.theme-light .step-item:hover .step-content p {
+  color: #2d2d2d !important;
+}
+
+body.theme-light .reseller-btn {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25) !important;
+}
+
+body.theme-light .reseller-btn:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4) !important;
+  transform: translateY(-4px) scale(1.05) !important;
+}
+

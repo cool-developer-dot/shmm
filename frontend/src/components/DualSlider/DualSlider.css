@@ -1,0 +1,561 @@
+.dual-slider-section {
+  width: 100vw;
+  min-height: 80vh;
+  background-color: #000000; /* Default - will be overridden by theme */
+  color: #ffffff;
+  padding: 6rem 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Subtle background gradient */
+.dual-slider-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(at 100% 0%, rgba(37, 99, 235, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dual-slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  z-index: 1;
+}
+
+.slider-wrapper {
+  width: 100%;
+}
+
+.slider-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #f8fafc, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #f8fafc; /* Fallback color in case gradient doesn't work */
+  min-height: 3.5rem; /* Ensure space for text */
+}
+
+/* RTL Support for headings - ensure text displays properly */
+[dir="rtl"] .slider-heading {
+  text-transform: none; /* Don't uppercase Urdu text */
+  letter-spacing: normal; /* Normal letter spacing for Urdu */
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  color: #f8fafc; /* Ensure text is visible */
+  background: linear-gradient(to left, #f8fafc, #94a3b8); /* Reverse gradient for RTL */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slider-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #8b5cf6);
+  border-radius: 2px;
+}
+
+.slider-track-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Gradient fade masks */
+.slider-track-container::before,
+.slider-track-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slider-track-container::before {
+  left: 0;
+  background: linear-gradient(to right, #000000, transparent);
+}
+
+.slider-track-container::after {
+  right: 0;
+  background: linear-gradient(to left, #000000, transparent);
+}
+
+/* RTL Support for gradient masks */
+[dir="rtl"] .slider-track-container::before {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to left, #000000, transparent);
+}
+
+[dir="rtl"] .slider-track-container::after {
+  right: auto;
+  left: 0;
+  background: linear-gradient(to right, #000000, transparent);
+}
+
+.slider-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Ensure slider works correctly in RTL */
+[dir="rtl"] .slider-track {
+  direction: ltr; /* Keep flex direction LTR for animation to work */
+}
+
+/* Static Grid for Parent Companies */
+.companies-grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Animation Keyframes */
+@keyframes slideLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* RTL Animation Keyframes */
+@keyframes slideLeftRTL {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+@keyframes slideRightRTL {
+  0% { transform: translateX(50%); }
+  100% { transform: translateX(0); }
+}
+
+.slow-slide {
+  animation: slideLeft 60s linear infinite;
+}
+
+.fast-slide-reverse {
+  animation: slideRight 50s linear infinite;
+}
+
+/* RTL Support for Slider */
+[dir="rtl"] .fast-slide-reverse {
+  animation: slideLeftRTL 50s linear infinite;
+}
+
+[dir="rtl"] .slow-slide {
+  animation: slideRightRTL 60s linear infinite;
+}
+
+/* Pause on hover */
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+/* Company Card Styles */
+.company-card {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(15, 15, 15, 0.98) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  backdrop-filter: blur(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  min-height: 200px;
+}
+
+.company-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.company-card:hover::before {
+  opacity: 1;
+}
+
+.company-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  border-color: rgba(139, 92, 246, 0.6);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.99) 100%);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(139, 92, 246, 0.3),
+    0 0 80px rgba(139, 92, 246, 0.15),
+    0 0 0 1px rgba(139, 92, 246, 0.2) inset;
+}
+
+.company-logo {
+  font-size: 4rem;
+  filter: grayscale(0.4) brightness(0.9);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+  transform: scale(1);
+}
+
+.company-card:hover .company-logo {
+  filter: grayscale(0) brightness(1.2);
+  transform: scale(1.2) rotate(5deg);
+}
+
+.company-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.company-card:hover .company-name {
+  background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-3px);
+}
+
+.company-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle, 
+    rgba(139, 92, 246, 0.15) 0%, 
+    rgba(139, 92, 246, 0.05) 40%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(30px);
+}
+
+.company-card:hover::after {
+  opacity: 1;
+}
+
+/* Project Card Styles */
+.project-card {
+  background: linear-gradient(145deg, rgba(20, 20, 20, 0.8), rgba(10, 10, 10, 0.9));
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  padding: 1.75rem;
+  min-width: 320px;
+  max-width: 320px;
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #8b5cf6;
+  box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.15);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project-logo {
+  font-size: 2rem;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.project-card:hover .project-logo {
+  transform: rotate(10deg);
+  background: #ffffff;
+}
+
+.project-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.project-status {
+  font-size: 0.7rem;
+  color: #10b981;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dual-slider-section {
+    padding: 4rem 0;
+    min-height: auto;
+  }
+
+  .dual-slider-container {
+    gap: 4rem;
+  }
+
+  .slider-heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .company-card {
+    padding: 2rem 1.5rem;
+    min-height: 180px;
+  }
+  
+  .company-logo {
+    font-size: 3rem;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+  }
+  
+  .project-card {
+    min-width: 280px;
+    max-width: 280px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-heading {
+    font-size: 1.5rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .company-card {
+    padding: 1.75rem 1.5rem;
+    min-height: 160px;
+  }
+
+  .company-logo {
+    font-size: 2.5rem;
+  }
+
+  .company-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-heading {
+    font-size: 1.5rem;
+  }
+  
+  .company-card {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Light Theme Styles */
+body.theme-light .dual-slider-section {
+  background-color: #fafafa !important;
+  color: #2d2d2d !important;
+}
+
+body.theme-light .dual-slider-background {
+  display: none !important;
+}
+
+body.theme-light .slider-heading {
+  background: linear-gradient(to right, #111111, #2563eb) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+body.theme-light [dir="rtl"] .slider-heading {
+  background: linear-gradient(to left, #111111, #2563eb) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+body.theme-light .slider-heading::after {
+  background: linear-gradient(90deg, #2563eb, #7c3aed) !important;
+}
+
+body.theme-light .slider-track-container::before {
+  background: linear-gradient(to right, #fafafa, transparent) !important;
+}
+
+body.theme-light .slider-track-container::after {
+  background: linear-gradient(to left, #fafafa, transparent) !important;
+}
+
+body.theme-light [dir="rtl"] .slider-track-container::before {
+  background: linear-gradient(to left, #fafafa, transparent) !important;
+}
+
+body.theme-light [dir="rtl"] .slider-track-container::after {
+  background: linear-gradient(to right, #fafafa, transparent) !important;
+}
+
+body.theme-light .project-card {
+  background: #ffffff !important;
+  border: 1.5px solid #e5e7eb !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.theme-light .project-card:hover {
+  border-color: #7c3aed !important;
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) scale(1.02) !important;
+}
+
+body.theme-light .project-logo {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+body.theme-light .project-logo-img {
+  object-fit: contain;
+  padding: 4px;
+}
+
+body.theme-light .project-card:hover .project-logo {
+  background: #ffffff !important;
+  border-color: #7c3aed !important;
+}
+
+body.theme-light .project-name {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+
+body.theme-light .project-status {
+  color: #10b981 !important;
+}
+
+body.theme-light .project-desc {
+  color: #333333 !important;
+  line-height: 1.6 !important;
+}
+

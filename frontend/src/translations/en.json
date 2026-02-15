@@ -1,0 +1,592 @@
+{
+  "nav": {
+    "home": "HOME",
+    "aboutUs": "ABOUT US",
+    "services": "SERVICES",
+    "freeOffers": "FREE OFFERS",
+    "guideUs": "GUIDE US",
+    "affiliate": "AFFILIATE",
+    "contactUs": "CONTACT US"
+  },
+  "auth": {
+    "login": "LOGIN",
+    "signUp": "SIGN UP",
+    "welcomeBack": "Welcome Back",
+    "signInToAccount": "Sign in to your account",
+    "createAccount": "Create Account",
+    "signUpToGetStarted": "Sign up to get started",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "fullName": "Full Name",
+    "confirmPassword": "Confirm Password",
+    "rememberMe": "Remember me",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signUpLink": "Sign up",
+    "signInLink": "Sign in",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "enterFullName": "Enter your full name",
+    "createPassword": "Create a password",
+    "confirmPasswordPlaceholder": "Confirm your password"
+  },
+  "theme": {
+    "light": "LIGHT",
+    "dark": "DARK",
+    "gray": "GRAY"
+  },
+  "language": {
+    "english": "English",
+    "urdu": "Urdu",
+    "hindi": "Hindi",
+    "arabic": "Arabic",
+    "chinese": "Chinese"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Innovating Social Media Growth",
+    "whoWeAre": "Who We Are",
+    "whoWeAreDesc": "We are a premier social media marketing solution provider, dedicated to helping businesses and individuals amplify their online presence. With years of expertise in digital growth strategies, we deliver authentic engagement and measurable results.",
+    "ourMission": "Our Mission",
+    "missionDesc": "To empower brands with cutting-edge tools and strategies for sustainable digital growth, making professional marketing accessible to everyone.",
+    "ourVision": "Our Vision",
+    "visionDesc": "To become the global standard for reliability and innovation in social media services, fostering a community where creativity thrives.",
+    "whyChooseUs": "Why Choose Us",
+    "instantDelivery": "Instant Delivery",
+    "instantDeliveryDesc": "Automated systems ensure your orders are processed immediately.",
+    "secureSafe": "Secure & Safe",
+    "secureSafeDesc": "Your privacy and security are our top priority with encrypted transactions.",
+    "support247": "24/7 Support",
+    "support247Desc": "Our dedicated team is always ready to assist you with any queries.",
+    "premiumQuality": "Premium Quality",
+    "premiumQualityDesc": "We provide only high-quality services to ensure best results.",
+    "ourValues": "Our Values",
+    "integrity": "Integrity",
+    "innovation": "Innovation",
+    "customerFirst": "Customer First",
+    "excellence": "Excellence",
+    "ourCompanies": "Our Companies",
+    "modal": {
+      "ourServices": "Our Services",
+      "leadershipTeam": "Leadership & Team",
+      "coreManagementTeam": "Core Management Team:",
+      "workforceCommunity": "Our Workforce & Community",
+      "mission": "Mission",
+      "vision": "Vision",
+      "coreValues": "Core Values"
+    },
+    "companies": {
+      "mshTechGroup": {
+        "name": "MSH TECH GROUP OF COMPANIES",
+        "description": "MSH Tech Group of Companies is a diversified global technology holding organization established in 2017, operating as the parent company for all MSH-branded businesses. The group delivers integrated IT, digital, telecom, creative, and automation solutions to clients across national and international markets, maintaining unified standards of innovation, quality, and compliance.",
+        "registration": "We are a fully registered and compliant organization, officially registered with SECP, FBR, PSUB, and other relevant legal authorities. With over 7+ years of industry experience, we have successfully served 1M+ users worldwide, ranging from individuals and startups to enterprises and global organizations.",
+        "services": {
+          "techDev": {
+            "name": "Technology & Development",
+            "items": [
+              "Website Design & Custom Web Development",
+              "Mobile Applications & System Software Development",
+              "Custom Software, SaaS & AI-Based Solutions",
+              "ERP, CRM & Business Automation Systems"
+            ]
+          },
+          "hosting": {
+            "name": "Hosting & Infrastructure",
+            "items": [
+              "Web Hosting & Domain Registration",
+              "Cloud Hosting, VPS & Dedicated Servers",
+              "Cybersecurity & Infrastructure Management"
+            ]
+          },
+          "digitalMarketing": {
+            "name": "Digital Marketing & Growth",
+            "items": [
+              "SEO (Search Engine Optimization)",
+              "Social Media Marketing (SMM)",
+              "Paid Advertising & Conversion Optimization"
+            ]
+          },
+          "creative": {
+            "name": "Creative & Media",
+            "items": [
+              "Graphics Designing & Logo Designing",
+              "Brand Identity, UI/UX & Visual Systems",
+              "Video Editing, Motion Graphics & Short-Form Content",
+              "YouTube Automation & Channel Management"
+            ]
+          },
+          "education": {
+            "name": "Education & Digital Enablement",
+            "items": [
+              "Online Courses & Professional Training",
+              "Software & Digital Tools Subscriptions",
+              "IT Consultancy & Digital Transformation"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "Muhammad Salman Hashmi",
+          "ceoTitle": "CEO - Technology entrepreneur and digital strategist with a strong focus on scalable systems, innovation, and long-term growth.",
+          "team": [
+            "Muhammad Yousaf Hashmi",
+            "Muhammad Younis Hashmi",
+            "Muhammad Usman Hashmi",
+            "Muhammad Luqman Hashmi",
+            "Abdul-Rahim Hashmi"
+          ]
+        },
+        "workforce": {
+          "employees": "750+ national & international employees",
+          "users": "1M+ active users worldwide"
+        },
+        "mission": "To empower businesses and users globally through secure, scalable, and innovative digital solutions.",
+        "vision": "To become a globally trusted technology group driving digital transformation.",
+        "values": ["Integrity", "Innovation", "Compliance", "Quality", "Client Success"]
+      },
+      "mshDigitalSolutions": {
+        "name": "MSH DIGITAL SOLUTIONS",
+        "description": "MSH Digital Solutions is a full-service digital and creative technology company under MSH Tech Group of Companies, operating since 2017. We help businesses establish strong digital identities, automate workflows, and scale online growth across global markets.",
+        "registration": "Registered with SECP, FBR, and PSUB, we have successfully served 1M+ users worldwide with reliable, compliant, and performance-driven solutions.",
+        "services": {
+          "development": {
+            "name": "Development Services",
+            "items": [
+              "Website & Web Application Development",
+              "Mobile App Development (Android & iOS)",
+              "Custom Software & AI Applications"
+            ]
+          },
+          "digitalMarketing": {
+            "name": "Digital Marketing",
+            "items": [
+              "SEO & Technical SEO",
+              "Social Media Marketing (SMM)",
+              "Paid Ads, Funnels & Analytics"
+            ]
+          },
+          "creative": {
+            "name": "Creative & Branding",
+            "items": [
+              "Graphics Designing & Logo Designing",
+              "Brand Identity & Visual Branding",
+              "UI/UX Design & Landing Pages"
+            ]
+          },
+          "media": {
+            "name": "Media & Automation",
+            "items": [
+              "Video Editing & Motion Graphics",
+              "YouTube Automation & Monetization",
+              "Marketing Automation Systems"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "Muhammad Salman Hashmi",
+          "ceoTitle": "CEO",
+          "team": [
+            "Muhammad Yousaf Hashmi",
+            "Muhammad Younis Hashmi",
+            "Muhammad Usman Hashmi",
+            "Muhammad Luqman Hashmi",
+            "Abdul-Rahim Hashmi"
+          ]
+        },
+        "workforce": {
+          "employees": "750+ professionals globally"
+        }
+      },
+      "mshTelecomNetwork": {
+        "name": "MSH TELECOM NETWORK",
+        "description": "MSH Telecom Network is a specialized telecom and IT infrastructure company under MSH Tech Group of Companies, delivering secure and scalable communication systems since 2017.",
+        "registration": "We are legally registered with SECP, FBR, and PSUB, and currently support 1M+ users worldwide through reliable telecom and network solutions.",
+        "services": {
+          "telecom": {
+            "name": "Telecom & Network Services",
+            "items": [
+              "Telecom Infrastructure Deployment",
+              "Network Design, Monitoring & Maintenance",
+              "VoIP & Cloud Telephony Solutions",
+              "Call Center & Communication Systems",
+              "Network Security & Firewall Management",
+              "Server Monitoring & Disaster Recovery"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "Muhammad Salman Hashmi",
+          "ceoTitle": "CEO",
+          "description": "Led by CEO Muhammad Salman Hashmi, MSH Telecom Network is managed by a skilled leadership team working under centralized group governance, supported by 750+ technical professionals worldwide."
+        },
+        "workforce": {
+          "users": "1M+ users worldwide"
+        }
+      },
+      "mshDigitalHub": {
+        "name": "MSH DIGITAL HUB",
+        "description": "MSH Digital Hub is an innovation-focused digital platform under MSH Tech Group of Companies, serving creators, professionals, and businesses since 2017. We provide accessible tools, education, and creative services to 1M+ users globally.",
+        "services": {
+          "education": {
+            "name": "Digital Education",
+            "items": [
+              "Online Courses & Skill Development",
+              "LMS & E-Learning Platforms"
+            ]
+          },
+          "creative": {
+            "name": "Creative Services",
+            "items": [
+              "Graphics & Logo Designing",
+              "Video Editing & Motion Graphics",
+              "Branding Kits & Media Assets"
+            ]
+          },
+          "automation": {
+            "name": "Automation & Tools",
+            "items": [
+              "AI & Software Tools Subscriptions",
+              "Writing, Design & Video Tools",
+              "YouTube Automation Systems"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "Muhammad Salman Hashmi",
+          "ceoTitle": "CEO",
+          "description": "Operating under CEO Muhammad Salman Hashmi, MSH Digital Hub is supported by the same core management and a global workforce of 750+ professionals, ensuring innovation, scalability, and reliability."
+        },
+        "workforce": {
+          "users": "1M+ users globally",
+          "employees": "750+ professionals globally"
+        }
+      }
+    }
+  },
+  "footer": {
+    "subscribeNewsletter": "Subscribe to Our Newsletter",
+    "enterEmailAddress": "Enter your email address",
+    "subscribe": "Subscribe",
+    "smmPanel": "MSH SMM",
+    "smmAbout": "Our SMM Panel delivers reliable, fast social media marketing services—followers, likes, views, and engagement—with 24/7 support and secure payment options. Trusted by thousands worldwide for quality and delivery. We keep your data secure and your orders on track.",
+    "privacyText": "Your privacy is important to us. We are committed to protecting your personal information and ensuring a secure experience.",
+    "usefulLinks": "Useful Links",
+    "services": "Services",
+    "home": "Home",
+    "aboutUs": "aboutUs",
+    "testimonials": "Testimonials",
+    "ourTeam": "Our Team",
+    "socialMediaGrowth": "Social Media Growth",
+    "contentCreation": "Content Creation",
+    "analyticsReporting": "Analytics & Reporting",
+    "brandManagement": "Brand Management",
+    "influencerMarketing": "Influencer Marketing",
+    "announcement": "Announcements",
+    "paymentRefundPolicy": "Payment & Refund Policy",
+    "followUs": "Follow Us",
+    "ourLocation": "Our Location",
+    "locationAddress": "Main MSH TECH GROUP OF COMPANIES Head Office, Near Riaz Town, Khan Pur, Punjab, Pakistan.",
+    "viewOnMap": "View on Map",
+    "uanHelpline": "UAN Helpline",
+    "copyright": "© {year} MSH SMM. All rights reserved.",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "policies": {
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "MSH SMM Panel is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you use our services.",
+    "privacySections": {
+      "collection": "Information We Collect",
+      "collectionText": "We collect information you provide when registering (name, email, payment details), usage data, and device information to improve our services and process orders.",
+      "use": "How We Use Your Information",
+      "useText": "Your information is used to process orders, provide customer support, send service updates, improve our platform, and comply with legal obligations.",
+      "security": "Data Security",
+      "securityText": "We use industry-standard encryption and security measures to protect your personal and payment data. We do not store full credit card numbers.",
+      "cookies": "Cookies & Tracking",
+      "cookiesText": "We use cookies and similar technologies to maintain sessions, remember preferences, and analyze site traffic. You can manage cookie settings in your browser.",
+      "thirdParty": "Third-Party Sharing",
+      "thirdPartyText": "We may share data with payment processors and service providers necessary to operate our platform. We do not sell your personal information.",
+      "contact": "Contact Us"
+    },
+    "refundTitle": "Payment & Refund Policy",
+    "refundIntro": "Please read this policy carefully. By using MSH SMM Panel you agree to these payment and refund terms.",
+    "refundSections": {
+      "paymentMethods": "Accepted Payment Methods",
+      "paymentMethodsText": "We accept major payment methods as displayed on our website. All transactions are processed through secure payment gateways. You are responsible for any fees charged by your bank or provider.",
+      "pricing": "Pricing & Currency",
+      "pricingText": "Prices are displayed in USD (or as shown). We reserve the right to change prices. Orders are charged at the rate at the time of purchase.",
+      "refundEligibility": "Refund Eligibility",
+      "refundEligibilityText": "Refunds may be considered for undelivered or significantly delayed orders. You must contact support within the timeframe stated for your service. Refunds are not available for completed or partially delivered orders.",
+      "refundProcess": "Refund Process",
+      "refundProcessText": "To request a refund, contact our support with your order ID and reason. We will review and respond within 5–7 business days. Approved refunds will be credited to your original payment method within 10–14 business days.",
+      "disputes": "Disputes",
+      "disputesText": "Any payment disputes should be raised with our support team first. Chargebacks without prior contact may result in account suspension.",
+      "contact": "Contact Us"
+    },
+    "announcementsTitle": "Announcements",
+    "announcementsIntro": "Important updates and notices from MSH SMM Panel.",
+    "announcementItem1Title": "Service Availability",
+    "announcementItem1Text": "All services are currently operational. Delivery times may vary during peak hours. We appreciate your patience.",
+    "announcementItem2Title": "Payment Gateway",
+    "announcementItem2Text": "We support secure payments. Please ensure you have read our Payment & Refund Policy and Privacy Policy before placing orders.",
+    "announcementItem3Title": "Support",
+    "announcementItem3Text": "For any queries, use our Contact form or UAN Helpline: +92-336-3333-442. We are here to help."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or need assistance? We're here to help. Reach out to us and we'll get back to you as soon as possible.",
+    "sendMessage": "Send us a Message",
+    "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "required": "*",
+    "yourFullName": "Your full name",
+    "yourEmailExample": "your.email@example.com",
+    "whatIsThisRegarding": "What is this regarding?",
+    "tellUsHowWeCanHelp": "Tell us how we can help you...",
+    "sendMessageButton": "Send Message",
+    "formFooterNote": "We aim to respond within 24 hours. For urgent help, use WhatsApp or call our UAN Helpline.",
+    "getInTouch": "Get in Touch",
+    "uanHelpline": "UAN Helpline",
+    "uanClickToCall": "Tap to call from your phone",
+    "emailSupport": "Email Support",
+    "respondWithin24Hours": "We typically respond within 24 hours",
+    "liveChat": "Live Chat",
+    "chatOnWhatsApp": "Chat on WhatsApp",
+    "available247": "Available 24/7 for instant support",
+    "businessHours": "Business Hours",
+    "mondayFriday": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "saturday": "Saturday: 10:00 AM - 4:00 PM",
+    "sunday": "Sunday: Closed",
+    "ourLocation": "Our Location",
+    "interactiveMap": "Interactive Map",
+    "businessAddress": "123 Business Street, City, Country",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters",
+    "thankYouMessage": "Thank you for your message! We will get back to you soon."
+  },
+  "freeOffers": {
+    "title": "Free Trial Offers",
+    "subtitle": "Experience our quality services for free",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "youtube": "YouTube",
+    "freeLikes": "Free Likes",
+    "freeViews": "Free Views",
+    "freeSubscribers": "Free Subscribers",
+    "likesAmount": "50 Likes",
+    "viewsAmount": "1000 Views",
+    "subsAmount": "10 Subs",
+    "boostEngagement": "Boost your engagement instantly with real likes.",
+    "getContentSeen": "Get your content seen by more people.",
+    "kickstartGrowth": "Kickstart your channel growth today.",
+    "claimNow": "Claim Now",
+    "readyForMore": "Ready for more?",
+    "signUpUnlock": "Sign up now to unlock premium features and unlimited growth.",
+    "getStarted": "Get Started"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Manage and explore our available SMM services",
+    "youtube": "YouTube",
+    "websiteTraffic": "Website Traffic",
+    "facebook": "Facebook",
+    "tiktok": "TikTok",
+    "viewsSubscribersLikes": "Views, Subscribers, Likes",
+    "organicDirectSocial": "Organic, Direct, Social",
+    "likesFollowersShares": "Likes, Followers, Shares",
+    "viewsFollowersLikes": "Views, Followers, Likes"
+  },
+  "affiliate": {
+    "title": "Affiliate Program",
+    "subtitle": "Earn money by promoting our services",
+    "heroTitle": "Earn by Promoting Our Platform",
+    "heroDescription": "Join our affiliate program and earn generous commissions for every referral. Share our platform with your audience and turn your influence into income. No experience required - we provide all the tools you need to succeed.",
+    "howItWorks": "How It Works",
+    "signUp": "Sign Up",
+    "signUpDesc": "Create your free affiliate account in minutes. No credit card required.",
+    "getYourLink": "Get Your Link",
+    "getYourLinkDesc": "Receive your unique affiliate tracking link and marketing materials.",
+    "promote": "Promote",
+    "promoteDesc": "Share your link on social media, blogs, or any platform you prefer.",
+    "earnCommission": "Earn Commission",
+    "earnCommissionDesc": "Get paid for every successful referral. Payouts processed weekly.",
+    "commissionBenefits": "Commission & Benefits",
+    "upTo30Commission": "Up to 30% Commission",
+    "upTo30CommissionDesc": "Earn competitive commission rates on every sale you refer.",
+    "weeklyPayouts": "Weekly Payouts",
+    "weeklyPayoutsDesc": "Get paid every week. Fast and reliable payment processing.",
+    "marketingMaterials": "Marketing Materials",
+    "marketingMaterialsDesc": "Access banners, links, and resources to help you promote.",
+    "dedicatedSupport": "Dedicated Support",
+    "dedicatedSupportDesc": "Get help from our affiliate team whenever you need it.",
+    "realTimeAnalytics": "Real-Time Analytics",
+    "realTimeAnalyticsDesc": "Track your performance with detailed analytics and insights.",
+    "noMinimumThreshold": "No Minimum Threshold",
+    "noMinimumThresholdDesc": "Get paid regardless of your earnings amount, no minimum required.",
+    "whyJoinUs": "Why Join Us",
+    "dashboardPreview": "Affiliate Dashboard Preview",
+    "totalEarnings": "Total Earnings",
+    "totalClicks": "Total Clicks",
+    "conversions": "Conversions",
+    "readyToStartEarning": "Ready to Start Earning?",
+    "readyToStartEarningDesc": "Join thousands of successful affiliates and start earning today. No upfront costs, no commitments - just pure earning potential.",
+    "startEarningToday": "Start Earning Today",
+    "joinNow": "Join Now",
+    "joinAffiliateProgram": "Join Affiliate Program",
+    "trustedPlatform": "Trusted Platform",
+    "trustedPlatformDesc": "Join thousands of successful affiliates earning with us.",
+    "highConversionRates": "High Conversion Rates",
+    "highConversionRatesDesc": "Our platform converts at industry-leading rates.",
+    "dedicatedSupport24": "Dedicated Support",
+    "dedicatedSupport24Desc": "24/7 support team to help you maximize your earnings.",
+    "marketingTools": "Marketing Tools",
+    "marketingToolsDesc": "Access banners, links, and promotional materials."
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Join thousands of satisfied customers growing with us",
+    "email": "Email:",
+    "company": "Company:",
+    "location": "Location:",
+    "memberSince": "Member Since:",
+    "totalOrders": "Total Orders:",
+    "smmReseller": "SMM Reseller",
+    "digitalMarketer": "Digital Marketer",
+    "contentCreator": "Content Creator",
+    "agencyOwner": "Agency Owner",
+    "influencer": "Influencer",
+    "secretAgent": "Secret Agent"
+  },
+  "stats": {
+    "ordersDelivered": "Orders Delivered",
+    "orderCompleted": "Order Completed",
+    "globalCommunity": "Global Community",
+    "activeUsers": "Active Users",
+    "serviceNetwork": "Service Network",
+    "activeServices": "Active Services",
+    "topRanking": "Top Ranking",
+    "worldWidePositions": "World Wide Positions"
+  },
+  "payment": {
+    "title": "Payment Methods",
+    "subtitle": "Secure and versatile payment options for instant transactions",
+    "bankWire": "Bank Wire",
+    "bankTransfer": "Bank Transfer",
+    "bankTransferDesc": "Direct bank transfer with instant processing",
+    "easyPaisa": "Easy Paisa",
+    "easyPaisaDesc": "Mobile wallet payment made simple",
+    "jazzCash": "Jazz Cash",
+    "jazzCashDesc": "Quick mobile payment solution",
+    "paypal": "PayPal",
+    "paypalDesc": "Secure online payment gateway",
+    "mshCoin": "MSH Coin",
+    "mshCoinDesc": "Cryptocurrency payment platform",
+    "sadapay": "Sadapay",
+    "sadapayDesc": "Digital wallet for seamless payments",
+    "sslSecured": "SSL Secured",
+    "instantDeposit": "Instant Deposit",
+    "buyerProtection": "Buyer Protection"
+  },
+  "reseller": {
+    "title": "Become a Reseller Partner",
+    "subtitle": "Join the fastest growing SMM network and start your own business today.",
+    "wholesalePrices": "Wholesale Prices",
+    "wholesalePricesDesc": "Get the lowest rates in the market designed for max profit margins.",
+    "highSpeedAPI": "High-Speed API",
+    "highSpeedAPIDesc": "Seamless integration with full API documentation and 99.9% uptime.",
+    "prioritySupport": "Priority Support",
+    "prioritySupportDesc": "Dedicated account manager and 24/7 technical assistance for resellers.",
+    "step1Title": "Sign Up",
+    "step1Desc": "Create your free reseller account in seconds.",
+    "step2Title": "Add Funds",
+    "step2Desc": "Deposit via secure payment gateways.",
+    "step3Title": "Start Reselling",
+    "step3Desc": "Connect API or use panel to profit.",
+    "startResellingNow": "Start Reselling Now"
+  },
+  "howItWorks": {
+    "label": "Process",
+    "title": "How It Works?",
+    "subtitle": "By following these simple steps, you can achieve any social media goal you want.",
+    "step1Title": "Register & Log in",
+    "step1Desc": "Create an account in seconds. It's free and easy to get started with our platform.",
+    "step1Button": "Sign Up",
+    "step2Title": "Add Funds",
+    "step2Desc": "Deposit funds using our secure and diverse payment methods available worldwide.",
+    "step2Button": "Add Funds",
+    "step3Title": "Select a Service",
+    "step3Desc": "Choose from our wide range of high-quality SMM services that fit your needs.",
+    "step3Button": "View Services",
+    "step4Title": "Enjoy Results",
+    "step4Desc": "Sit back and watch your social media presence grow instantly with real results.",
+    "step4Button": "Get Started"
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "The experts behind our success",
+    "founderCeo": "Founder / CEO",
+    "operationsManager": "Operations Manager",
+    "influencerMarketingManager": "Influencer Marketing Manager",
+    "performanceMarketingSpecialist": "Performance Marketing Specialist",
+    "brandCommunicationsManager": "Brand Communications Manager",
+    "headOfSocialMedia": "Head of Social Media",
+    "member1Name": "Mr. Muhammad Luqman Hashmi",
+    "member2Name": "Mr. Muhammad Salman Hashmi",
+    "member3Name": "Mr. Muhammad Younis Hashmi",
+    "member4Name": "Mr. Muhammad Yousaf Hashmi",
+    "member5Name": "Mr. Abdul-Ul-Rahim Hashmi",
+    "member6Name": "Mr. Muhammad Usman Hashmi"
+  },
+  "dualSlider": {
+    "parentCompanies": "Our Parent Companies",
+    "ourProjects": "Our Projects",
+    "active": "Active",
+    "innovateGroup": "Innovate Group",
+    "apexSystems": "Apex Systems",
+    "summitPartners": "Summit Partners",
+    "nebulaTech": "Nebula Tech",
+    "socialBoost": "SocialBoost",
+    "socialBoostDesc": "Organic growth for social media profiles.",
+    "adMaster": "AdMaster",
+    "adMasterDesc": "Targeted advertising campaigns tailored for you.",
+    "contentKing": "ContentKing",
+    "contentKingDesc": "Premium content creation services.",
+    "analyticsPro": "AnalyticsPro",
+    "analyticsProDesc": "Deep dive analytics and reporting tools.",
+    "influenceHub": "InfluenceHub",
+    "influenceHubDesc": "Connect with top influencers in your niche.",
+    "brandBuilder": "BrandBuilder",
+    "brandBuilderDesc": "Complete brand identity makeover packages.",
+    "viralWave": "ViralWave",
+    "viralWaveDesc": "Trend analysis to make your content go viral.",
+    "botGuard": "BotGuard",
+    "botGuardDesc": "Advanced protection against bot traffic."
+  },
+  "serviceTable": {
+    "id": "ID",
+    "service": "Service",
+    "ratePer1000": "Rate per 1000",
+    "minMaxOrder": "Min / Max Order",
+    "avgTime": "Avg. Time",
+    "action": "Action",
+    "details": "Details",
+    "buyNow": "Buy Now",
+    "searchServices": "Search services...",
+    "allCategories": "All Categories",
+    "allStatus": "All Status",
+    "priceAll": "Price: All",
+    "lowToHigh": "Low to High",
+    "highToLow": "High to Low",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "active": "Active",
+    "maintenance": "Maintenance"
+  }
+}

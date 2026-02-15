@@ -1,0 +1,552 @@
+{
+  "nav": {
+    "home": "首页",
+    "aboutUs": "关于我们",
+    "services": "服务",
+    "freeOffers": "免费优惠",
+    "guideUs": "指南我们",
+    "affiliate": "联盟",
+    "contactUs": "联系我们"
+  },
+  "auth": {
+    "login": "登录",
+    "signUp": "注册",
+    "welcomeBack": "欢迎回来",
+    "signInToAccount": "登录您的账户",
+    "createAccount": "创建账户",
+    "signUpToGetStarted": "注册以开始",
+    "emailAddress": "电子邮件地址",
+    "password": "密码",
+    "fullName": "全名",
+    "confirmPassword": "确认密码",
+    "rememberMe": "记住我",
+    "dontHaveAccount": "没有账户？",
+    "alreadyHaveAccount": "已有账户？",
+    "signUpLink": "注册",
+    "signInLink": "登录",
+    "enterEmail": "输入您的电子邮件",
+    "enterPassword": "输入您的密码",
+    "enterFullName": "输入您的全名",
+    "createPassword": "创建密码",
+    "confirmPasswordPlaceholder": "确认您的密码"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "gray": "灰色"
+  },
+  "language": {
+    "english": "English",
+    "urdu": "اردو",
+    "hindi": "हिंदी",
+    "arabic": "العربية",
+    "chinese": "中文"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "创新社交媒体增长",
+    "whoWeAre": "我们是谁",
+    "whoWeAreDesc": "我们是一家领先的社交媒体营销解决方案提供商，致力于帮助企业和个人扩大在线影响力。凭借多年的数字增长策略专业知识，我们提供真实的参与度和可衡量的结果。",
+    "ourMission": "我们的使命",
+    "missionDesc": "通过前沿工具和策略赋能品牌实现可持续数字增长，使专业营销对每个人来说都触手可及。",
+    "ourVision": "我们的愿景",
+    "visionDesc": "成为社交媒体服务可靠性和创新的全球标准，培育一个创造力蓬勃发展的社区。",
+    "whyChooseUs": "为什么选择我们",
+    "instantDelivery": "即时交付",
+    "instantDeliveryDesc": "自动化系统确保您的订单立即处理。",
+    "secureSafe": "安全可靠",
+    "secureSafeDesc": "通过加密交易，您的隐私和安全是我们的首要任务。",
+    "support247": "24/7支持",
+    "support247Desc": "我们的专业团队随时准备协助您解决任何问题。",
+    "premiumQuality": "优质品质",
+    "premiumQualityDesc": "我们只提供高质量服务，确保最佳结果。",
+    "ourValues": "我们的价值观",
+    "integrity": "诚信",
+    "innovation": "创新",
+    "customerFirst": "客户至上",
+    "excellence": "卓越",
+    "ourCompanies": "我们的公司",
+    "modal": {
+      "ourServices": "我们的服务",
+      "leadershipTeam": "领导与团队",
+      "coreManagementTeam": "核心管理团队：",
+      "workforceCommunity": "我们的员工与社区",
+      "mission": "使命",
+      "vision": "愿景",
+      "coreValues": "核心价值观"
+    },
+    "companies": {
+      "mshTechGroup": {
+        "name": "MSH科技集团公司",
+        "description": "MSH科技集团公司是一家多元化的全球技术控股组织，成立于2017年，作为所有MSH品牌企业的母公司运营。该集团为国内外市场的客户提供集成的IT、数字、电信、创意和自动化解决方案，保持统一的创新、质量和合规标准。",
+        "registration": "我们是一家完全注册和合规的组织，正式注册于SECP、FBR、PSUB和其他相关法律机构。凭借超过7年的行业经验，我们已成功为全球超过100万用户提供服务，从个人和初创公司到企业和全球组织。",
+        "services": {
+          "techDev": {
+            "name": "技术与开发",
+            "items": [
+              "网站设计与定制网站开发",
+              "移动应用程序与系统软件开发",
+              "定制软件、SaaS和基于AI的解决方案",
+              "ERP、CRM和业务自动化系统"
+            ]
+          },
+          "hosting": {
+            "name": "托管与基础设施",
+            "items": [
+              "网站托管与域名注册",
+              "云托管、VPS和专用服务器",
+              "网络安全与基础设施管理"
+            ]
+          },
+          "digitalMarketing": {
+            "name": "数字营销与增长",
+            "items": [
+              "SEO（搜索引擎优化）",
+              "社交媒体营销（SMM）",
+              "付费广告与转化优化"
+            ]
+          },
+          "creative": {
+            "name": "创意与媒体",
+            "items": [
+              "图形设计与标志设计",
+              "品牌标识、UI/UX和视觉系统",
+              "视频编辑、动态图形和短视频内容",
+              "YouTube自动化与频道管理"
+            ]
+          },
+          "education": {
+            "name": "教育与数字赋能",
+            "items": [
+              "在线课程与专业培训",
+              "软件与数字工具订阅",
+              "IT咨询与数字化转型"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "穆罕默德·萨尔曼·哈希米",
+          "ceoTitle": "首席执行官 - 专注于可扩展系统、创新和长期增长的技术企业家和数字战略家。",
+          "team": [
+            "穆罕默德·优素福·哈希米",
+            "穆罕默德·尤尼斯·哈希米",
+            "穆罕默德·奥斯曼·哈希米",
+            "穆罕默德·卢克曼·哈希米",
+            "阿卜杜勒-拉希姆·哈希米"
+          ]
+        },
+        "workforce": {
+          "employees": "750+名国内外员工",
+          "users": "全球100万+活跃用户"
+        },
+        "mission": "通过安全、可扩展和创新的数字解决方案，在全球范围内赋能企业和用户。",
+        "vision": "成为推动数字化转型的全球值得信赖的技术集团。",
+        "values": ["诚信", "创新", "合规", "质量", "客户成功"]
+      },
+      "mshDigitalSolutions": {
+        "name": "MSH数字解决方案",
+        "description": "MSH数字解决方案是MSH科技集团公司旗下的一家全方位数字和创意技术公司，自2017年开始运营。我们帮助企业建立强大的数字身份，自动化工作流程，并在全球市场扩展在线增长。",
+        "registration": "我们在SECP、FBR和PSUB注册，已成功为全球超过100万用户提供可靠、合规和以性能为导向的解决方案。",
+        "services": {
+          "development": {
+            "name": "开发服务",
+            "items": [
+              "网站与Web应用程序开发",
+              "移动应用开发（Android和iOS）",
+              "定制软件与AI应用程序"
+            ]
+          },
+          "digitalMarketing": {
+            "name": "数字营销",
+            "items": [
+              "SEO与技术SEO",
+              "社交媒体营销（SMM）",
+              "付费广告、漏斗和分析"
+            ]
+          },
+          "creative": {
+            "name": "创意与品牌",
+            "items": [
+              "图形设计与标志设计",
+              "品牌标识与视觉品牌",
+              "UI/UX设计与落地页"
+            ]
+          },
+          "media": {
+            "name": "媒体与自动化",
+            "items": [
+              "视频编辑与动态图形",
+              "YouTube自动化与变现",
+              "营销自动化系统"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "穆罕默德·萨尔曼·哈希米",
+          "ceoTitle": "首席执行官",
+          "team": [
+            "穆罕默德·优素福·哈希米",
+            "穆罕默德·尤尼斯·哈希米",
+            "穆罕默德·奥斯曼·哈希米",
+            "穆罕默德·卢克曼·哈希米",
+            "阿卜杜勒-拉希姆·哈希米"
+          ]
+        },
+        "workforce": {
+          "employees": "全球750+名专业人士"
+        }
+      },
+      "mshTelecomNetwork": {
+        "name": "MSH电信网络",
+        "description": "MSH电信网络是MSH科技集团公司旗下的一家专业电信和IT基础设施公司，自2017年以来提供安全且可扩展的通信系统。",
+        "registration": "我们在SECP、FBR和PSUB合法注册，目前通过可靠的电信和网络解决方案为全球超过100万用户提供支持。",
+        "services": {
+          "telecom": {
+            "name": "电信与网络服务",
+            "items": [
+              "电信基础设施部署",
+              "网络设计、监控与维护",
+              "VoIP与云电话解决方案",
+              "呼叫中心与通信系统",
+              "网络安全与防火墙管理",
+              "服务器监控与灾难恢复"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "穆罕默德·萨尔曼·哈希米",
+          "ceoTitle": "首席执行官",
+          "description": "在首席执行官穆罕默德·萨尔曼·哈希米的领导下，MSH电信网络由一支熟练的领导团队管理，在集中式集团治理下工作，得到全球750+名技术专业人士的支持。"
+        },
+        "workforce": {
+          "users": "全球100万+用户"
+        }
+      },
+      "mshDigitalHub": {
+        "name": "MSH数字中心",
+        "description": "MSH数字中心是MSH科技集团公司旗下专注于创新的数字平台，自2017年以来为创作者、专业人士和企业提供服务。我们为全球超过100万用户提供易于使用的工具、教育和创意服务。",
+        "services": {
+          "education": {
+            "name": "数字教育",
+            "items": [
+              "在线课程与技能发展",
+              "LMS与电子学习平台"
+            ]
+          },
+          "creative": {
+            "name": "创意服务",
+            "items": [
+              "图形与标志设计",
+              "视频编辑与动态图形",
+              "品牌工具包与媒体资产"
+            ]
+          },
+          "automation": {
+            "name": "自动化与工具",
+            "items": [
+              "AI与软件工具订阅",
+              "写作、设计与视频工具",
+              "YouTube自动化系统"
+            ]
+          }
+        },
+        "leadership": {
+          "ceo": "穆罕默德·萨尔曼·哈希米",
+          "ceoTitle": "首席执行官",
+          "description": "在首席执行官穆罕默德·萨尔曼·哈希米的领导下，MSH数字中心得到相同的核心管理和全球750+名专业人士的支持，确保创新、可扩展性和可靠性。"
+        },
+        "workforce": {
+          "users": "全球100万+用户",
+          "employees": "全球750+名专业人士"
+        }
+      }
+    }
+  },
+  "footer": {
+    "subscribeNewsletter": "订阅我们的新闻通讯",
+    "enterEmailAddress": "输入您的电子邮件地址",
+    "subscribe": "订阅",
+    "smmPanel": "MSH SMM",
+    "smmAbout": "我们的SMM面板提供可靠、快速的社会媒体营销服务——粉丝、点赞、观看和互动——提供24/7支持和安全支付选项。全球数千用户信赖我们的质量与交付。",
+    "privacyText": "您的隐私对我们很重要。我们致力于保护您的个人信息并确保安全体验。",
+    "usefulLinks": "有用链接",
+    "services": "服务",
+    "home": "首页",
+    "aboutUs": "关于我们",
+    "testimonials": "客户评价",
+    "ourTeam": "我们的团队",
+    "socialMediaGrowth": "社交媒体增长",
+    "contentCreation": "内容创作",
+    "analyticsReporting": "分析和报告",
+    "brandManagement": "品牌管理",
+    "influencerMarketing": "影响者营销",
+    "announcement": "公告",
+    "paymentRefundPolicy": "付款与退款政策",
+    "followUs": "关注我们",
+    "ourLocation": "我们的位置",
+    "locationAddress": "MSH TECH集团公司总部，里亚兹镇附近，汗普尔，旁遮普，巴基斯坦。",
+    "viewOnMap": "在地图上查看",
+    "uanHelpline": "UAN 帮助热线",
+    "copyright": "© {year} MSH SMM。保留所有权利。",
+    "termsConditions": "条款和条件",
+    "privacyPolicy": "隐私政策"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题或需要帮助？我们随时为您服务。联系我们，我们会尽快回复您。",
+    "sendMessage": "给我们发消息",
+    "formDescription": "填写下方表单，我们会尽快与您联系。",
+    "name": "姓名",
+    "email": "电子邮件",
+    "subject": "主题",
+    "message": "消息",
+    "required": "*",
+    "yourFullName": "您的全名",
+    "yourEmailExample": "您的.电子邮件@示例.com",
+    "whatIsThisRegarding": "这是关于什么的？",
+    "tellUsHowWeCanHelp": "告诉我们我们如何帮助您...",
+    "sendMessageButton": "发送消息",
+    "formFooterNote": "我们力争24小时内回复。如需紧急帮助，请使用WhatsApp或拨打UAN帮助热线。",
+    "getInTouch": "取得联系",
+    "uanHelpline": "UAN 帮助热线",
+    "uanClickToCall": "点击从手机拨打",
+    "emailSupport": "电子邮件支持",
+    "respondWithin24Hours": "我们通常在24小时内回复",
+    "liveChat": "在线聊天",
+    "chatOnWhatsApp": "在WhatsApp上聊天",
+    "available247": "24/7全天候即时支持",
+    "businessHours": "营业时间",
+    "mondayFriday": "周一至周五：上午9:00 - 下午6:00",
+    "saturday": "周六：上午10:00 - 下午4:00",
+    "sunday": "周日：休息",
+    "ourLocation": "我们的位置",
+    "interactiveMap": "交互式地图",
+    "businessAddress": "123商业街，城市，国家",
+    "nameRequired": "姓名是必填项",
+    "emailRequired": "电子邮件是必填项",
+    "emailInvalid": "请输入有效的电子邮件地址",
+    "subjectRequired": "主题是必填项",
+    "messageRequired": "消息是必填项",
+    "messageMinLength": "消息至少需要10个字符",
+    "thankYouMessage": "感谢您的消息！我们会尽快回复您。"
+  },
+  "freeOffers": {
+    "title": "免费试用优惠",
+    "subtitle": "免费体验我们的优质服务",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "youtube": "YouTube",
+    "freeLikes": "免费点赞",
+    "freeViews": "免费观看",
+    "freeSubscribers": "免费订阅者",
+    "likesAmount": "50个点赞",
+    "viewsAmount": "1000次观看",
+    "subsAmount": "10个订阅",
+    "boostEngagement": "通过真实点赞立即提升您的参与度。",
+    "getContentSeen": "让更多人看到您的内容。",
+    "kickstartGrowth": "今天就开始您的频道增长。",
+    "claimNow": "立即领取",
+    "readyForMore": "想要更多？",
+    "signUpUnlock": "立即注册以解锁高级功能和无限增长。",
+    "getStarted": "开始"
+  },
+  "services": {
+    "title": "服务",
+    "subtitle": "管理和探索我们可用的SMM服务",
+    "youtube": "YouTube",
+    "websiteTraffic": "网站流量",
+    "facebook": "Facebook",
+    "tiktok": "TikTok",
+    "viewsSubscribersLikes": "观看、订阅者、点赞",
+    "organicDirectSocial": "自然、直接、社交",
+    "likesFollowersShares": "点赞、关注者、分享",
+    "viewsFollowersLikes": "观看、关注者、点赞"
+  },
+  "affiliate": {
+    "title": "联盟计划",
+    "subtitle": "通过推广我们的服务赚钱",
+    "signUp": "注册",
+    "signUpDesc": "在几分钟内创建您的免费联盟账户。无需信用卡。",
+    "getYourLink": "获取您的链接",
+    "getYourLinkDesc": "接收您独特的联盟跟踪链接和营销材料。",
+    "promote": "推广",
+    "promoteDesc": "在社交媒体、博客或您喜欢的任何平台上分享您的链接。",
+    "earnCommission": "赚取佣金",
+    "earnCommissionDesc": "每个成功的推荐都会获得报酬。每周处理付款。",
+    "upTo30Commission": "高达30%的佣金",
+    "upTo30CommissionDesc": "在您推荐的每次销售中赚取有竞争力的佣金率。",
+    "weeklyPayouts": "每周付款",
+    "weeklyPayoutsDesc": "每周获得报酬。快速可靠的付款处理。",
+    "marketingMaterials": "营销材料",
+    "marketingMaterialsDesc": "访问横幅、链接和资源，帮助您推广。",
+    "dedicatedSupport": "专属支持",
+    "dedicatedSupportDesc": "在需要时从我们的联盟团队获得帮助。",
+    "realTimeAnalytics": "实时分析",
+    "realTimeAnalyticsDesc": "通过详细的分析和洞察跟踪您的表现。",
+    "noMinimumThreshold": "无最低门槛",
+    "noMinimumThresholdDesc": "无论您的收入金额如何，都能获得付款，无需最低要求。",
+    "joinNow": "立即加入",
+    "heroTitle": "通过推广我们的平台赚钱",
+    "heroDescription": "加入我们的联盟计划，每次推荐都能获得丰厚的佣金。与您的受众分享我们的平台，将您的影响力转化为收入。无需经验 - 我们提供您成功所需的所有工具。",
+    "howItWorks": "工作原理",
+    "commissionBenefits": "佣金和福利",
+    "whyJoinUs": "为什么加入我们",
+    "dashboardPreview": "联盟仪表板预览",
+    "totalEarnings": "总收入",
+    "totalClicks": "总点击量",
+    "conversions": "转化次数",
+    "readyToStartEarning": "准备开始赚钱了吗？",
+    "readyToStartEarningDesc": "加入数千名成功的联盟会员，今天就开始赚钱。无需预付费用，无需承诺 - 只是纯粹的赚钱潜力。",
+    "startEarningToday": "今天开始赚钱",
+    "joinAffiliateProgram": "加入联盟计划",
+    "trustedPlatform": "值得信赖的平台",
+    "trustedPlatformDesc": "加入数千名与我们合作的成功联盟会员。",
+    "highConversionRates": "高转化率",
+    "highConversionRatesDesc": "我们的平台以行业领先的转化率进行转化。",
+    "dedicatedSupport24": "专属支持",
+    "dedicatedSupport24Desc": "24/7支持团队帮助您最大化收入。",
+    "marketingTools": "营销工具",
+    "marketingToolsDesc": "访问横幅、链接和促销材料。"
+  },
+  "payment": {
+    "title": "支付方式",
+    "subtitle": "安全多样的即时交易支付选项",
+    "bankWire": "银行电汇",
+    "bankTransfer": "银行转账",
+    "bankTransferDesc": "即时处理的直接银行转账",
+    "easyPaisa": "易支付",
+    "easyPaisaDesc": "简化的移动钱包支付",
+    "jazzCash": "爵士现金",
+    "jazzCashDesc": "快速移动支付解决方案",
+    "paypal": "PayPal",
+    "paypalDesc": "安全的在线支付网关",
+    "mshCoin": "MSH币",
+    "mshCoinDesc": "加密货币支付平台",
+    "sadapay": "萨达支付",
+    "sadapayDesc": "无缝支付的数字钱包",
+    "sslSecured": "SSL安全",
+    "instantDeposit": "即时存款",
+    "buyerProtection": "买家保护"
+  },
+  "testimonials": {
+    "title": "用户评价",
+    "subtitle": "加入数千名与我们共同成长的满意客户",
+    "email": "电子邮件：",
+    "company": "公司：",
+    "location": "位置：",
+    "memberSince": "会员自：",
+    "totalOrders": "总订单：",
+    "smmReseller": "SMM经销商",
+    "digitalMarketer": "数字营销人员",
+    "contentCreator": "内容创作者",
+    "agencyOwner": "代理商",
+    "influencer": "影响者",
+    "secretAgent": "秘密特工"
+  },
+  "stats": {
+    "ordersDelivered": "已交付订单",
+    "orderCompleted": "订单完成",
+    "globalCommunity": "全球社区",
+    "activeUsers": "活跃用户",
+    "serviceNetwork": "服务网络",
+    "activeServices": "活跃服务",
+    "topRanking": "顶级排名",
+    "worldWidePositions": "全球位置"
+  },
+  "reseller": {
+    "title": "成为经销商合作伙伴",
+    "subtitle": "加入增长最快的SMM网络，今天就开始您自己的业务。",
+    "wholesalePrices": "批发价格",
+    "wholesalePricesDesc": "获得市场上最低的费率，专为最大利润率而设计。",
+    "highSpeedAPI": "高速API",
+    "highSpeedAPIDesc": "无缝集成，提供完整的API文档和99.9%的正常运行时间。",
+    "prioritySupport": "优先支持",
+    "prioritySupportDesc": "专属客户经理和24/7技术支持，专为经销商服务。",
+    "step1Title": "注册",
+    "step1Desc": "在几秒钟内创建您的免费经销商账户。",
+    "step2Title": "添加资金",
+    "step2Desc": "通过安全的支付网关存款。",
+    "step3Title": "开始经销",
+    "step3Desc": "连接API或使用面板来盈利。",
+    "startResellingNow": "立即开始经销"
+  },
+  "howItWorks": {
+    "label": "流程",
+    "title": "工作原理？",
+    "subtitle": "通过遵循这些简单步骤，您可以实现任何社交媒体目标。",
+    "step1Title": "注册并登录",
+    "step1Desc": "在几秒钟内创建账户。免费且易于开始使用我们的平台。",
+    "step1Button": "注册",
+    "step2Title": "添加资金",
+    "step2Desc": "使用我们在全球范围内提供的安全多样的支付方式存款。",
+    "step2Button": "添加资金",
+    "step3Title": "选择服务",
+    "step3Desc": "从我们广泛的高质量SMM服务中选择适合您需求的服务。",
+    "step3Button": "查看服务",
+    "step4Title": "享受结果",
+    "step4Desc": "坐下来，看着您的社交媒体影响力随着真实结果立即增长。",
+    "step4Button": "开始"
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "我们成功背后的专家",
+    "founderCeo": "创始人 / 首席执行官",
+    "operationsManager": "运营经理",
+    "influencerMarketingManager": "影响者营销经理",
+    "performanceMarketingSpecialist": "绩效营销专家",
+    "brandCommunicationsManager": "品牌传播经理",
+    "headOfSocialMedia": "社交媒体主管",
+    "member1Name": "穆罕默德·卢克曼·哈希米先生",
+    "member2Name": "穆罕默德·萨尔曼·哈希米先生",
+    "member3Name": "穆罕默德·尤尼斯·哈希米先生",
+    "member4Name": "穆罕默德·优素福·哈希米先生",
+    "member5Name": "阿卜杜勒-拉希姆·哈希米先生",
+    "member6Name": "穆罕默德·奥斯曼·哈希米先生"
+  },
+  "dualSlider": {
+    "parentCompanies": "我们的母公司",
+    "ourProjects": "我们的项目",
+    "active": "活跃",
+    "innovateGroup": "创新集团",
+    "apexSystems": "顶点系统",
+    "summitPartners": "峰会合作伙伴",
+    "nebulaTech": "星云科技",
+    "socialBoost": "社交提升",
+    "socialBoostDesc": "社交媒体档案的有机增长。",
+    "adMaster": "广告大师",
+    "adMasterDesc": "为您量身定制的定向广告活动。",
+    "contentKing": "内容之王",
+    "contentKingDesc": "优质内容创作服务。",
+    "analyticsPro": "分析专家",
+    "analyticsProDesc": "深入分析和报告工具。",
+    "influenceHub": "影响者中心",
+    "influenceHubDesc": "与您领域内的顶级影响者建立联系。",
+    "brandBuilder": "品牌建设者",
+    "brandBuilderDesc": "完整的品牌形象改造套餐。",
+    "viralWave": "病毒式传播",
+    "viralWaveDesc": "趋势分析，让您的内容走红。",
+    "botGuard": "机器人防护",
+    "botGuardDesc": "针对机器人流量的高级保护。"
+  },
+  "serviceTable": {
+    "id": "ID",
+    "service": "服务",
+    "ratePer1000": "每1000费率",
+    "minMaxOrder": "最小/最大订单",
+    "avgTime": "平均时间",
+    "action": "操作",
+    "details": "详情",
+    "buyNow": "立即购买",
+    "searchServices": "搜索服务...",
+    "allCategories": "所有类别",
+    "allStatus": "所有状态",
+    "priceAll": "价格：全部",
+    "lowToHigh": "从低到高",
+    "highToLow": "从高到低",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "youtube": "YouTube",
+    "active": "活跃",
+    "maintenance": "维护"
+  }
+}
